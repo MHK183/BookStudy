@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>part2_tag_01</title>
+</head>
+<!-- input 태그의 type 속성들 예제 -->
+<body>
+  <!-- form 태그 (데이터 전송)-->
+  <form action="">
+    <!-- fieldset, legend 태그 (폼안에 구역 나누기, 제목) -->
+    <fieldset>
+      <legend>배송지 입력</legend>
+    </fieldset>
+    <fieldset>
+      <legend>전화번호입력</legend>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>아이디 비밀번호 입력창</legend>
+      <!-- label 태그 (input 태그의 레이블)-->
+      <label>아이디<input></label>
+      <label for="user-id">아이디<input id="user-id"></label>
+      <label>비밀번호<input type="password"></label>
+    </fieldset>
+    <!-- 검색, url, email 태그-->
+    <fieldset>
+      <legend>검색, url, 이메일, 전화번호 양식</legend>
+      <label>검색<input type="search"></label>
+      <label>웹주소<input type="url"></label>
+      <label>이메일주소<input type="email"></label>
+    </fieldset>
+    <fieldset>
+      <legend>선택해라</legend>
+      <!-- radio 1개 선택, checkbox 2개 이상 선택 -->
+      <label><input type="checkbox">체크박스1</label>
+      <label><input type="checkbox">체크박스2</label>
+      <label><input type="checkbox">체크박스3</label>
+      <!-- name이 같아야 하나만 선택 할 수 있음 -->
+      <label><input type="radio" name="d">라디오 버튼1</label>
+      <label><input type="radio" name="d">라디오 버튼2</label>
+    </fieldset>
+    <fieldset>
+      <!-- number, range 숫자 선택-->
+      <legend>type = number, range </legend>
+      <!-- 스핀박스로 숫자 선택 -->
+      <label>type="number"<input type="number"></label>
+      <!-- 슬라이드 막대로 숫자 입력 -->
+      <label>type="range"<input type="range"></label>
+    </fieldset>
+    <fieldset>
+      <!-- 날짜 입력 (달력 삽입) -->
+      <legend>달력임</legend>
+      <label>date 달력<input type="date"></label>
+      <label>month 달력<input type="month"></label>
+      <label>week 달력<input type="week"></label>
+    </fieldset>
+    <!-- submit, reset 태그 (전송, 입력내용 삭제) -->
+    <fieldset>
+      <legend>전송, 리셋</legend>
+      <label>아이디<input type="text"></label>
+      <input type="submit" value="전송">
+      <input type="reset" value="리셋">
+      <!-- image 버튼(submit버튼이 이미지가 있는 것) , button (기본버튼) -->
+      <input type="image" value="전송">
+      <input type="button" value="기본버튼">
+      <!-- file (파일첨부) -->
+      <input type="file">
+    </fieldset>
+
+  </form>
+</body>
+</html>
